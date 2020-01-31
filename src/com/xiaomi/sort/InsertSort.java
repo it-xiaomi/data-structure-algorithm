@@ -26,7 +26,7 @@ public class InsertSort {
             int insertValue = array[i];
             int insertIndex = i-1; // array[1] 下标的前一个位置
 
-            // 防止在找位置时角标月结
+            // 防止在找位置时角标越界
             // insertValue < array[insertIndex] 说明还没找到待插入的位置下标
             while (insertIndex >= 0 && insertValue < array[insertIndex]) {
                 array[insertIndex + 1] = array[insertIndex];

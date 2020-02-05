@@ -20,7 +20,7 @@ public class SelectSort {
 
     private static void selectSort(int[] array) {
 
-        for (int i = 0; i < array.length - 1; i++) {
+        /*for (int i = 0; i < array.length - 1; i++) {
             //假设第一个就是最小值
             int minIndex = i;
             int minValue = array[i];
@@ -40,45 +40,45 @@ public class SelectSort {
                 array[i] = minValue;
 //                System.out.println("第" + (i + 1) + "轮排序后结果：" + Arrays.toString(array));
             }
-        }
+        }*/
 
-      /*  //假设第一个就是最小值
+        // 假设第一个就是最小值
         int minIndex = 0;
         int minValue = array[0];
 
         for(int j=1; j<array.length; j++) {
             if(minValue > array[j]) { //说明假设的不是最小值
                 minIndex = j;
-                //再将最小值重置
+                // 再将最小值重置
                 minValue = array[j];
             }
         }
 
-        if(minIdex != 0) {
-            //交换位置，先将查找到最小位置替换成第一个，再将第一个替换成记录下的最下值
+        if(minIndex != 0) {
+            // 交换位置，先将查找到最小位置替换成第一个，再将第一个替换成记录下的最下值
             array[minIndex] = array[0];
             array[0] = minValue;
             System.out.println("第一轮排序后结果：" + Arrays.toString(array));
         }
 
-        //假设第一个就是最小值
+        // 假设第一个就是最小值
         minIndex = 1;
         minValue = array[1];
 
         for(int j=2; j<array.length; j++) {
             if(minValue > array[j]) { //说明假设的不是最小值
                 minIndex = j;
-                //再将最小值重置
+                // 再将最小值重置
                 minValue = array[j];
             }
         }
 
-        if(minIdex != 1) {
-            //交换位置，先将查找到最小位置替换成第一个，再将第一个替换成记录下的最下值
+        if(minIndex != 1) {
+            // 交换位置，先将查找到最小位置替换成第一个，再将第一个替换成记录下的最下值
             array[minIndex] = array[1];
             array[1] = minValue;
             System.out.println("第一轮排序后结果：" + Arrays.toString(array));
-         }*/
+         }
     }
 
     private static void selectSort1(int[] array) {

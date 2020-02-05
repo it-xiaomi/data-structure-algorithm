@@ -11,13 +11,13 @@ import java.util.Date;
 public class ShellSort {
     public static void main(String[] args) {
         int[] array = {8,9,1,7,2,3,5,4,6,0};
-        // shellSort2(array);
+         shellSort2(array);
 
-        System.out.println("插入排序开始时间：" + DataUtils.getDate(new Date()));
+        System.out.println("shell排序开始时间：" + DataUtils.getDate(new Date()));
         //测试100000个数据排序
-         shellSort2(DataUtils.getArrayData());
+//         shellSort2(DataUtils.getArrayData());
         // shellSort(array);
-        System.out.println("插入排序结束时间：" + DataUtils.getDate(new Date()));
+        System.out.println("shell排序结束时间：" + DataUtils.getDate(new Date()));
     }
 
     /**
@@ -29,6 +29,7 @@ public class ShellSort {
         for(int gap = array.length/2; gap >= 1; gap /= 2) {
 
             for(int i=gap; i<array.length; i++) {
+                System.out.println(Arrays.toString(array));
                 int insertIndex = i;
                 int insertValue = array[insertIndex];
                 if(array[insertIndex] < array[insertIndex - gap]) {
@@ -61,6 +62,7 @@ public class ShellSort {
 
             // 第一轮排序，将整个数组分成了5（10/2）组
             for(int i=gap; i<array.length; i++) {
+                System.out.println(Arrays.toString(array));
                 // 遍历各组中的所有元素（共5组，每组有2个数据），步长位5
                 for(int j=i-gap; j>=0; j -= gap) {
                     if(array[j] > array[j+gap]) {

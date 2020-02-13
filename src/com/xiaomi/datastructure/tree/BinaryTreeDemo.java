@@ -1,4 +1,4 @@
-package com.xiaomi.tree;
+package com.xiaomi.datastructure.tree;
 
 /**
  * 二叉树遍历

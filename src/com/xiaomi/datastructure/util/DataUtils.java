@@ -1,4 +1,4 @@
-package com.xiaomi.util;
+package com.xiaomi.datastructure.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;

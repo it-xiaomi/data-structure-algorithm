@@ -1,8 +1,7 @@
-package com.xiaomi.sort;
+package com.xiaomi.datastructure.sort;
 
-import com.xiaomi.util.DataUtils;
+import com.xiaomi.datastructure.util.DataUtils;
 
-import java.util.Arrays;
 import java.util.Date;
 
 /**
@@ -37,11 +36,11 @@ public class QuickSort {
         while (i < j) {
             //先从右侧开始找一个比基准值小的数据
             while (middleValue <= array[j] && i<j) {
-                j--;
+                j -= 1;
             }
             //再从左侧开始找一个比基准值大的数据
             while (middleValue >= array[i] && i<j) {
-                i++;
+                i += 1;
             }
 
             //如果满足条件，交换

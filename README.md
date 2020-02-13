@@ -1,5 +1,5 @@
 ---
-typora-copy-images-to: image
+
 ---
 
 # 数据结构和算法

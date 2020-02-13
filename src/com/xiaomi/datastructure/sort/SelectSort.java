@@ -1,6 +1,6 @@
-package com.xiaomi.sort;
+package com.xiaomi.datastructure.sort;
 
-import com.xiaomi.util.DataUtils;
+import com.xiaomi.datastructure.util.DataUtils;
 
 import java.util.Arrays;
 import java.util.Date;
